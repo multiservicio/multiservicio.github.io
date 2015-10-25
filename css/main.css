@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+}
+
+body a {
+    color: #4a4d53;
+}
+
+body a:hover {
+    color: #BDC3C7;
+}
+
+body h1 {
+    font-size: 45px;
+}
+body p {
+    font-size: 17px;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: -webkit-flex; /* For Safari */
+    -webkit-justify-content: center; /* For Safari */
+    -webkit-align-items: center; /* For Safari */
+}
+
+.fjord {
+    font-family: 'Fjord One', serif;
+}
