@@ -32,3 +32,9 @@ body p {
 .fjord {
     font-family: 'Fjord One', serif;
 }
+
+.kiosked_logo {
+    z-index: -1;
+    width: 95px;
+    padding-bottom: 2px;
+}
