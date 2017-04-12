@@ -25,15 +25,30 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+    
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">
         window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"light-bottom"};
     </script>
 
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#6fc3df",
+            "text": "#E6FFFF"
+            },
+            "button": {
+            "background": "#ffe64d"
+            }
+        },
+        "theme": "edgeless"
+        })});
+    </script>
     <!-- End Cookie Consent plugin -->
-
-
 
 </head>
 <body>
@@ -44,47 +59,42 @@
 
 <!-- Add your site or application content here -->
 
+<div class="image-container">
+    <img class="image"src="images/microservices.png">
+</div>
+
 <div class="vertical-center">
-
-    <img src="images/Dependency.png">
-
+    
     <h1 class="fjord">Pedro Díaz</h1>
 
     <p class="fjord">service operations engineer at
-        <a href="http://www.kiosked.com/">
+        <a href="http://www.tieto.com/">
             <img class="kiosked_logo"
-                 src="images/Kiosked-Logo-Alternate-White-Background.png"/>
+                 src="images/tieto_logo_blue_3.png"/>
         </a> - devops believer</p>
-
 
     <br/>
 
     <div class="row row-icon">
-        <div class="link col-md-3 cols-sm-12">
+        <div class="link col-md-4 cols-sm-12">
+            <a href="https://twitter.com/multiservicio86" data-toggle="tooltip" title="Twitter" data-placement="bottom">
+                <span class="fa fa-twitter fa-3x"></span>
+            </a>
+        </div>
+        <div class="link col-md-4 cols-sm-12">
             <a href="http://fi.linkedin.com/pub/pedro-díaz/52/a4/7a8/" data-toggle="tooltip" title="Linkedin Profile"
                data-placement="bottom">
                 <span class="fa fa-linkedin-square fa-3x"></span>
             </a>
         </div>
-        <div class="link col-md-3 cols-sm-12" style="height: 100%;">
+        <div class="link col-md-4 cols-sm-12" style="height: 100%;">
             <a href="https://github.com/multiservicio" data-toggle="tooltip" title="GitHub Profile"
                data-placement="bottom">
                 <span class="fa fa-github fa-3x"></span>
             </a>
         </div>
-        <div class="link col-md-3 cols-sm-12">
-            <a href="https://twitter.com/multiservicio86" data-toggle="tooltip" title="Twitter" data-placement="bottom">
-                <span class="fa fa-twitter fa-3x"></span>
-            </a>
-        </div>
-        <div class="link col-md-3 cols-sm-12">
-            <a href="/blog" data-toggle="tooltip" title="Blog" data-placement="bottom">
-                <span class="fa fa-terminal fa-3x"></span>
-            </a>
-        </div>
     </div>
 </div>
-
 
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -101,7 +111,6 @@
 
     ga('create', 'UA-69260262-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 
 </body>
