@@ -1,5 +1,6 @@
 body {
     background-color: #0C141F;
+    font-family: 'Fjord One', serif;
 }
 
 body p, h1, h2 {
@@ -30,9 +31,10 @@ body p {
     display: -webkit-flex; /* For Safari */
     -webkit-justify-content: center; /* For Safari */
     -webkit-align-items: center; /* For Safari */
+    text-align: center;
 }
 
-.fjord {
+.fjord-font {
     font-family: 'Fjord One', serif;
 }
 
@@ -56,4 +58,53 @@ body p {
     margin-top: 3em;
     margin-bottom: 1em;
     max-height: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    body a {
+        color: #6FC3DF;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    p span {
+        display: block;
+    }
+
+    .vertical-center {
+        min-height: 100%;
+        margin-top: 15em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: -webkit-flex; /* For Safari */
+        -webkit-justify-content: center; /* For Safari */
+        -webkit-align-items: center; /* For Safari */
+        text-align: center;
+    }
+
+    .image-container {
+        min-width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: -webkit-flex; /* For Safari */
+        -webkit-justify-content: center; /* For Safari */
+        -webkit-align-items: center; /* For Safari */
+    }
+
+    .image {
+        margin-top: 3em;
+        margin-bottom: 1em;
+        max-height: 300px;
+    }
+
 }
