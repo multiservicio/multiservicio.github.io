@@ -8,11 +8,11 @@ body p, h1, h2 {
 }
 
 body a {
-    color: #6FC3DF;
+    color: #E6FFFF;
 }
 
 body a:hover {
-    color: #DF740C;
+    color: #229e6b;
 }
 
 body h1 {
@@ -55,8 +55,9 @@ body p {
 
 .kiosked_logo {
     z-index: -1;
-    width: 50px;
-    padding-bottom: 4px;
+    width: 164px;
+    padding-top: 3px;
+    padding-left: 8px;
 }
 
 .image-container {
